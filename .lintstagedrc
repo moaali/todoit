@@ -1,0 +1,24 @@
+{
+  "*.js": [
+    "prettier --write",
+    "eslint",
+    "jest --findRelatedTests",
+    "git add"
+  ],
+  "*.scss": [
+    "stylelint",
+    "git add"
+  ],
+  "*.css": [
+    "stylelint",
+    "git add"
+  ],
+  "*.json": [
+    "jsonlint",
+    "git add"
+  ],
+  "*.html": [
+    "htmlhint",
+    "git add"
+  ]
+}

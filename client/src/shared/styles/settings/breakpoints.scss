@@ -1,0 +1,38 @@
+// ---------------------------------------------------------
+// @Responsive Breakpoints
+// ---------------------------------------------------------
+
+// [1] : Small devices (landscape phones, 576px and up).
+// [2] : Medium devices (tablets, 768px and up).
+// [3] : Large devices (desktops, 992px and up).
+// [4] : Extra large devices (large desktops, 1200px and up).
+// [5] : HD devices (large screens, 1600px and up).
+
+$breakpoint-sm: 576px !default;  // [1]
+$breakpoint-md: 768px !default;  // [2]
+$breakpoint-lg: 992px !default;  // [3]
+$breakpoint-xl: 1200px !default; // [4]
+$breakpoint-hd: 1600px !default; // [5]
+
+// ---------------------------------------------------------
+// @Responsive Breakpoints Suffixes
+// ---------------------------------------------------------
+
+$breakpoints: (
+  "sm\\+" "screen and (min-width: #{$breakpoint-sm})",
+  "md\\+" "screen and (min-width: #{$breakpoint-md})",
+  "lg\\+" "screen and (min-width: #{$breakpoint-lg})",
+  "xl\\+" "screen and (min-width: #{$breakpoint-xl})",
+  "hd\\+" "screen and (min-width: #{$breakpoint-hd})",
+
+  "hd-" "screen and (max-width: #{$breakpoint-hd - 0.02px})",
+  "xl-" "screen and (max-width: #{$breakpoint-xl - 0.02px})",
+  "lg-" "screen and (max-width: #{$breakpoint-lg - 0.02px})",
+  "md-" "screen and (max-width: #{$breakpoint-md - 0.02px})",
+  "sm-" "screen and (max-width: #{$breakpoint-sm - 0.02px})",
+
+  "xl" "screen and (min-width: #{$breakpoint-xl}) and (max-width: #{$breakpoint-hd - 0.02px})",
+  "lg" "screen and (min-width: #{$breakpoint-lg}) and (max-width: #{$breakpoint-xl - 0.02px})",
+  "md" "screen and (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lg - 0.02px})",
+  "sm" "screen and (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 0.02px})",
+);

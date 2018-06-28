@@ -1,0 +1,249 @@
+// ---------------------------------------------------------
+// @TOC
+// ---------------------------------------------------------
+
+// + @Margin (0 > 4 Step 1)
+// + @Margin (5 > 35 Step 5)
+// + @Margin (40 > 160 Step 10)
+// + @Margin Auto
+
+// ---------------------------------------------------------
+// @Padding (0 > 4 Step 1)
+// ---------------------------------------------------------
+
+@for $i from 0 through 4 {
+  %m-#{$i}  { margin: #{$i}px !important; }
+  %mT-#{$i} { margin-top: #{$i}px !important; }
+  %mR-#{$i} { margin-right: #{$i}px !important; }
+  %mB-#{$i} { margin-bottom: #{$i}px !important; }
+  %mL-#{$i} { margin-left: #{$i}px !important; }
+
+  %mY-#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+
+  %mX-#{$i} {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+
+  %m-nv-#{$i}  { margin: -#{$i}px !important; }
+  %mT-nv-#{$i} { margin-top: -#{$i}px !important; }
+  %mR-nv-#{$i} { margin-right: -#{$i}px !important; }
+  %mB-nv-#{$i} { margin-bottom: -#{$i}px !important; }
+  %mL-nv-#{$i} { margin-left: -#{$i}px !important; }
+
+  %mY-nv-#{$i} {
+    margin-top: -#{$i}px !important;
+    margin-bottom: -#{$i}px !important;
+  }
+
+  %mX-nv-#{$i} {
+    margin-left: -#{$i}px !important;
+    margin-right: -#{$i}px !important;
+  }
+
+  @include generate-responsive() {
+    %m-#{$i}\@#{$breakpoint-alias}  { margin: #{$i}px !important; }
+    %mT-#{$i}\@#{$breakpoint-alias} { margin-top: #{$i}px !important; }
+    %mR-#{$i}\@#{$breakpoint-alias} { margin-right: #{$i}px !important; }
+    %mB-#{$i}\@#{$breakpoint-alias} { margin-bottom: #{$i}px !important; }
+    %mL-#{$i}\@#{$breakpoint-alias} { margin-left: #{$i}px !important; }
+
+    %mY-#{$i}\@#{$breakpoint-alias} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    %mX-#{$i}\@#{$breakpoint-alias} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    %m-nv-#{$i}\@#{$breakpoint-alias}  { margin: -#{$i}px !important; }
+    %mT-nv-#{$i}\@#{$breakpoint-alias} { margin-top: -#{$i}px !important; }
+    %mR-nv-#{$i}\@#{$breakpoint-alias} { margin-right: -#{$i}px !important; }
+    %mB-nv-#{$i}\@#{$breakpoint-alias} { margin-bottom: -#{$i}px !important; }
+    %mL-nv-#{$i}\@#{$breakpoint-alias} { margin-left: -#{$i}px !important; }
+
+    %mY-nv-#{$i}\@#{$breakpoint-alias} {
+      margin-top: -#{$i}px !important;
+      margin-bottom: -#{$i}px !important;
+    }
+
+    %mX-nv-#{$i}\@#{$breakpoint-alias} {
+      margin-left: -#{$i}px !important;
+      margin-right: -#{$i}px !important;
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// @Padding (5 > 35 Step 5)
+// ---------------------------------------------------------
+
+@for $i from 5 through 35 {
+  @if $i % 5 == 0 {
+    %m-#{$i}  { margin: #{$i}px !important; }
+    %mT-#{$i} { margin-top: #{$i}px !important; }
+    %mR-#{$i} { margin-right: #{$i}px !important; }
+    %mB-#{$i} { margin-bottom: #{$i}px !important; }
+    %mL-#{$i} { margin-left: #{$i}px !important; }
+
+    %mY-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    %mX-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    %m-nv-#{$i}  { margin: -#{$i}px !important; }
+    %mT-nv-#{$i} { margin-top: -#{$i}px !important; }
+    %mR-nv-#{$i} { margin-right: -#{$i}px !important; }
+    %mB-nv-#{$i} { margin-bottom: -#{$i}px !important; }
+    %mL-nv-#{$i} { margin-left: -#{$i}px !important; }
+
+    %mY-nv-#{$i} {
+      margin-top: -#{$i}px !important;
+      margin-bottom: -#{$i}px !important;
+    }
+
+    %mX-nv-#{$i} {
+      margin-left: -#{$i}px !important;
+      margin-right: -#{$i}px !important;
+    }
+
+    @include generate-responsive() {
+      %m-#{$i}\@#{$breakpoint-alias}  { margin: #{$i}px !important; }
+      %mT-#{$i}\@#{$breakpoint-alias} { margin-top: #{$i}px !important; }
+      %mR-#{$i}\@#{$breakpoint-alias} { margin-right: #{$i}px !important; }
+      %mB-#{$i}\@#{$breakpoint-alias} { margin-bottom: #{$i}px !important; }
+      %mL-#{$i}\@#{$breakpoint-alias} { margin-left: #{$i}px !important; }
+
+      %mY-#{$i}\@#{$breakpoint-alias} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+      }
+
+      %mX-#{$i}\@#{$breakpoint-alias} {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+      }
+
+      %m-nv-#{$i}\@#{$breakpoint-alias}  { margin: -#{$i}px !important; }
+      %mT-nv-#{$i}\@#{$breakpoint-alias} { margin-top: -#{$i}px !important; }
+      %mR-nv-#{$i}\@#{$breakpoint-alias} { margin-right: -#{$i}px !important; }
+      %mB-nv-#{$i}\@#{$breakpoint-alias} { margin-bottom: -#{$i}px !important; }
+      %mL-nv-#{$i}\@#{$breakpoint-alias} { margin-left: -#{$i}px !important; }
+
+      %mY-nv-#{$i}\@#{$breakpoint-alias} {
+        margin-top: -#{$i}px !important;
+        margin-bottom: -#{$i}px !important;
+      }
+
+      %mX-nv-#{$i}\@#{$breakpoint-alias} {
+        margin-left: -#{$i}px !important;
+        margin-right: -#{$i}px !important;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// @Padding (40 > 160 Step 10)
+// ---------------------------------------------------------
+
+@for $i from 40 through 160 {
+  @if $i % 10 == 0 {
+
+    %m-#{$i}  { margin: #{$i}px !important; }
+    %mT-#{$i} { margin-top: #{$i}px !important; }
+    %mR-#{$i} { margin-right: #{$i}px !important; }
+    %mB-#{$i} { margin-bottom: #{$i}px !important; }
+    %mL-#{$i} { margin-left: #{$i}px !important; }
+
+    %mY-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    %mX-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    %m-nv-#{$i}  { margin: -#{$i}px !important; }
+    %mT-nv-#{$i} { margin-top: -#{$i}px !important; }
+    %mR-nv-#{$i} { margin-right: -#{$i}px !important; }
+    %mB-nv-#{$i} { margin-bottom: -#{$i}px !important; }
+    %mL-nv-#{$i} { margin-left: -#{$i}px !important; }
+
+    %mY-nv-#{$i} {
+      margin-top: -#{$i}px !important;
+      margin-bottom: -#{$i}px !important;
+    }
+
+    %mX-nv-#{$i} {
+      margin-left: -#{$i}px !important;
+      margin-right: -#{$i}px !important;
+    }
+
+    @include generate-responsive() {
+      %m-#{$i}\@#{$breakpoint-alias}  { margin: #{$i}px !important; }
+      %mT-#{$i}\@#{$breakpoint-alias} { margin-top: #{$i}px !important; }
+      %mR-#{$i}\@#{$breakpoint-alias} { margin-right: #{$i}px !important; }
+      %mB-#{$i}\@#{$breakpoint-alias} { margin-bottom: #{$i}px !important; }
+      %mL-#{$i}\@#{$breakpoint-alias} { margin-left: #{$i}px !important; }
+
+      %mY-#{$i}\@#{$breakpoint-alias} {
+        margin-top: #{$i}px !important;
+        margin-bottom: #{$i}px !important;
+      }
+
+      %mX-#{$i}\@#{$breakpoint-alias} {
+        margin-left: #{$i}px !important;
+        margin-right: #{$i}px !important;
+      }
+
+      %m-nv-#{$i}\@#{$breakpoint-alias}  { margin: -#{$i}px !important; }
+      %mT-nv-#{$i}\@#{$breakpoint-alias} { margin-top: -#{$i}px !important; }
+      %mR-nv-#{$i}\@#{$breakpoint-alias} { margin-right: -#{$i}px !important; }
+      %mB-nv-#{$i}\@#{$breakpoint-alias} { margin-bottom: -#{$i}px !important; }
+      %mL-nv-#{$i}\@#{$breakpoint-alias} { margin-left: -#{$i}px !important; }
+
+      %mY-nv-#{$i}\@#{$breakpoint-alias} {
+        margin-top: -#{$i}px !important;
+        margin-bottom: -#{$i}px !important;
+      }
+
+      %mX-nv-#{$i}\@#{$breakpoint-alias} {
+        margin-left: -#{$i}px !important;
+        margin-right: -#{$i}px !important;
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// @Padding Auto
+// ---------------------------------------------------------
+
+%m-a  { margin: auto !important; }
+%mX-a { margin-left: auto !important; margin-right: auto !important; }
+%mT-a { margin-top: auto !important; }
+%mR-a { margin-right: auto !important; }
+%mB-a { margin-bottom: auto !important; }
+%mL-a { margin-left: auto !important; }
+
+@include generate-responsive() {
+  %m-a\@#{$breakpoint-alias}  { margin: auto !important; }
+  %mX-a\@#{$breakpoint-alias} { margin-left: auto !important; margin-right: auto !important; }
+  %mT-a\@#{$breakpoint-alias} { margin-top: auto !important; }
+  %mR-a\@#{$breakpoint-alias} { margin-right: auto !important; }
+  %mB-a\@#{$breakpoint-alias} { margin-bottom: auto !important; }
+  %mL-a\@#{$breakpoint-alias} { margin-left: auto !important; }
+}

@@ -1,0 +1,39 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.badge {
+  // Typography
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+
+  // Box Model
+  display: inline-block;
+  padding: 3px 5px;
+  min-width: 24px;
+
+  // Cosmetics
+  border-radius: 10em;
+  background-color: rgba($color-pivotal, 0.05);
+  color: rgba($color-pivotal, 0.7);
+}
+
+.badge--primary {
+  // Cosmetics
+  background-color: rgba($color-primary, 0.1);
+  color: $color-primary;
+}
+
+.badge--success {
+  // Cosmetics
+  background-color: rgba($color-success, 0.1);
+  color: $color-success;
+}
+
+.badge--warning {
+  // Cosmetics
+  background-color: rgba($color-warning, 0.1);
+  color: $color-warning;
+}

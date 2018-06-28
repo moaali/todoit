@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo should match snapshot 1`] = `
+<TodoComponent>
+  <Provider
+    store={
+      Object {
+        "offcanvasStore": OffcanvasStore {},
+        "searchStore": SearchStore {},
+        "sidebarStore": SidebarStore {},
+        "todosStore": TodosStore {
+          "activeCategory": "all",
+          "applyFilters": [Function],
+          "currentOffset": 0,
+          "displayedTodos": Array [],
+          "filterByCategory": [Function],
+          "filterByCompleted": [Function],
+          "filterByQuery": [Function],
+          "filters": Object {
+            "category": "all",
+            "completed": null,
+            "query": "",
+          },
+          "findById": [Function],
+          "loadChunkSize": 10,
+          "loadTodos": [Function],
+          "meta": Object {
+            "all": 0,
+            "completed": 0,
+            "pending": 0,
+          },
+          "requestStatus": "error",
+          "shownTodo": null,
+          "todos": Array [],
+        },
+      }
+    }
+  >
+    <inject-Todo-with-store
+      todo={
+        Object {
+          "completed": true,
+          "date": "Jan 01, 2020",
+          "description": "Todo description.",
+          "id": "1",
+          "title": "Todo Title",
+        }
+      }
+    >
+      <Todo
+        store={
+          Object {
+            "offcanvasStore": OffcanvasStore {},
+            "searchStore": SearchStore {},
+            "sidebarStore": SidebarStore {},
+            "todosStore": TodosStore {
+              "activeCategory": "all",
+              "applyFilters": [Function],
+              "currentOffset": 0,
+              "displayedTodos": Array [],
+              "filterByCategory": [Function],
+              "filterByCompleted": [Function],
+              "filterByQuery": [Function],
+              "filters": Object {
+                "category": "all",
+                "completed": null,
+                "query": "",
+              },
+              "findById": [Function],
+              "loadChunkSize": 10,
+              "loadTodos": [Function],
+              "meta": Object {
+                "all": 0,
+                "completed": 0,
+                "pending": 0,
+              },
+              "requestStatus": "error",
+              "shownTodo": null,
+              "todos": Array [],
+            },
+          }
+        }
+        todo={
+          Object {
+            "completed": true,
+            "date": "Jan 01, 2020",
+            "description": "Todo description.",
+            "id": "1",
+            "title": "Todo Title",
+          }
+        }
+      >
+        <div
+          className="todo todo--is-completed"
+        >
+          <div
+            className="peers jc-sb w-100p"
+          >
+            <div
+              className="peer"
+            >
+              <inject-Checkbox-with-store
+                handleCheck={[Function]}
+                todo={
+                  Object {
+                    "completed": true,
+                    "date": "Jan 01, 2020",
+                    "description": "Todo description.",
+                    "id": "1",
+                    "title": "Todo Title",
+                  }
+                }
+              >
+                <Checkbox
+                  handleCheck={[Function]}
+                  store={
+                    Object {
+                      "offcanvasStore": OffcanvasStore {},
+                      "searchStore": SearchStore {},
+                      "sidebarStore": SidebarStore {},
+                      "todosStore": TodosStore {
+                        "activeCategory": "all",
+                        "applyFilters": [Function],
+                        "currentOffset": 0,
+                        "displayedTodos": Array [],
+                        "filterByCategory": [Function],
+                        "filterByCompleted": [Function],
+                        "filterByQuery": [Function],
+                        "filters": Object {
+                          "category": "all",
+                          "completed": null,
+                          "query": "",
+                        },
+                        "findById": [Function],
+                        "loadChunkSize": 10,
+                        "loadTodos": [Function],
+                        "meta": Object {
+                          "all": 0,
+                          "completed": 0,
+                          "pending": 0,
+                        },
+                        "requestStatus": "error",
+                        "shownTodo": null,
+                        "todos": Array [],
+                      },
+                    }
+                  }
+                  todo={
+                    Object {
+                      "completed": true,
+                      "date": "Jan 01, 2020",
+                      "description": "Todo description.",
+                      "id": "1",
+                      "title": "Todo Title",
+                    }
+                  }
+                >
+                  <label
+                    className="checkbox checkbox--big"
+                    htmlFor="checkbox__input-1"
+                  >
+                    <input
+                      className="checkbox__input"
+                      defaultChecked={true}
+                      id="checkbox__input-1"
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="checkbox__checkmark"
+                    />
+                  </label>
+                </Checkbox>
+              </inject-Checkbox-with-store>
+            </div>
+            <div
+              className="peer"
+            >
+              <Controls
+                handleEditMode={[Function]}
+                handleView={[Function]}
+                isEditMode={false}
+                todo={
+                  Object {
+                    "completed": true,
+                    "date": "Jan 01, 2020",
+                    "description": "Todo description.",
+                    "id": "1",
+                    "title": "Todo Title",
+                  }
+                }
+              >
+                <ul
+                  className="peers todo-controls"
+                >
+                  <inject-Delete-with-store
+                    todo={
+                      Object {
+                        "completed": true,
+                        "date": "Jan 01, 2020",
+                        "description": "Todo description.",
+                        "id": "1",
+                        "title": "Todo Title",
+                      }
+                    }
+                  >
+                    <Delete
+                      store={
+                        Object {
+                          "offcanvasStore": OffcanvasStore {},
+                          "searchStore": SearchStore {},
+                          "sidebarStore": SidebarStore {},
+                          "todosStore": TodosStore {
+                            "activeCategory": "all",
+                            "applyFilters": [Function],
+                            "currentOffset": 0,
+                            "displayedTodos": Array [],
+                            "filterByCategory": [Function],
+                            "filterByCompleted": [Function],
+                            "filterByQuery": [Function],
+                            "filters": Object {
+                              "category": "all",
+                              "completed": null,
+                              "query": "",
+                            },
+                            "findById": [Function],
+                            "loadChunkSize": 10,
+                            "loadTodos": [Function],
+                            "meta": Object {
+                              "all": 0,
+                              "completed": 0,
+                              "pending": 0,
+                            },
+                            "requestStatus": "error",
+                            "shownTodo": null,
+                            "todos": Array [],
+                          },
+                        }
+                      }
+                      todo={
+                        Object {
+                          "completed": true,
+                          "date": "Jan 01, 2020",
+                          "description": "Todo description.",
+                          "id": "1",
+                          "title": "Todo Title",
+                        }
+                      }
+                    >
+                      <li
+                        className="peer todo-controls__item"
+                      >
+                        <a
+                          className="fa fa-trash todo-controls__icon"
+                          data-for="controls__control-tip-delete-1"
+                          data-tip={true}
+                          href="#"
+                          onClick={[Function]}
+                        >
+                           
+                        </a>
+                        <ReactTooltip
+                          effect="solid"
+                          id="controls__control-tip-delete-1"
+                          insecure={true}
+                          resizeHide={true}
+                          wrapper="div"
+                        >
+                          <div
+                            className="__react_component_tooltip place-top type-dark "
+                            data-id="tooltip"
+                            id="controls__control-tip-delete-1"
+                          >
+                            <span>
+                              Delete Todo
+                            </span>
+                          </div>
+                        </ReactTooltip>
+                      </li>
+                    </Delete>
+                  </inject-Delete-with-store>
+                  <inject-View-with-store
+                    handleView={[Function]}
+                    isEditMode={false}
+                    todo={
+                      Object {
+                        "completed": true,
+                        "date": "Jan 01, 2020",
+                        "description": "Todo description.",
+                        "id": "1",
+                        "title": "Todo Title",
+                      }
+                    }
+                  >
+                    <View
+                      handleView={[Function]}
+                      isEditMode={false}
+                      store={
+                        Object {
+                          "offcanvasStore": OffcanvasStore {},
+                          "searchStore": SearchStore {},
+                          "sidebarStore": SidebarStore {},
+                          "todosStore": TodosStore {
+                            "activeCategory": "all",
+                            "applyFilters": [Function],
+                            "currentOffset": 0,
+                            "displayedTodos": Array [],
+                            "filterByCategory": [Function],
+                            "filterByCompleted": [Function],
+                            "filterByQuery": [Function],
+                            "filters": Object {
+                              "category": "all",
+                              "completed": null,
+                              "query": "",
+                            },
+                            "findById": [Function],
+                            "loadChunkSize": 10,
+                            "loadTodos": [Function],
+                            "meta": Object {
+                              "all": 0,
+                              "completed": 0,
+                              "pending": 0,
+                            },
+                            "requestStatus": "error",
+                            "shownTodo": null,
+                            "todos": Array [],
+                          },
+                        }
+                      }
+                      todo={
+                        Object {
+                          "completed": true,
+                          "date": "Jan 01, 2020",
+                          "description": "Todo description.",
+                          "id": "1",
+                          "title": "Todo Title",
+                        }
+                      }
+                    >
+                      <li
+                        className="peer mL-10 todo-controls__item"
+                      >
+                        <a
+                          className="fa fa-eye todo-controls__icon"
+                          data-for="controls__control-tip-view-1"
+                          data-tip={true}
+                          href="#"
+                          onClick={[Function]}
+                        >
+                           
+                        </a>
+                        <ReactTooltip
+                          effect="solid"
+                          id="controls__control-tip-view-1"
+                          insecure={true}
+                          resizeHide={true}
+                          wrapper="div"
+                        >
+                          <div
+                            className="__react_component_tooltip place-top type-dark "
+                            data-id="tooltip"
+                            id="controls__control-tip-view-1"
+                          >
+                            <span>
+                              View Todo
+                            </span>
+                          </div>
+                        </ReactTooltip>
+                      </li>
+                    </View>
+                  </inject-View-with-store>
+                  <inject-Edit-with-store
+                    handleEditMode={[Function]}
+                    todo={
+                      Object {
+                        "completed": true,
+                        "date": "Jan 01, 2020",
+                        "description": "Todo description.",
+                        "id": "1",
+                        "title": "Todo Title",
+                      }
+                    }
+                  >
+                    <Edit
+                      handleEditMode={[Function]}
+                      store={
+                        Object {
+                          "offcanvasStore": OffcanvasStore {},
+                          "searchStore": SearchStore {},
+                          "sidebarStore": SidebarStore {},
+                          "todosStore": TodosStore {
+                            "activeCategory": "all",
+                            "applyFilters": [Function],
+                            "currentOffset": 0,
+                            "displayedTodos": Array [],
+                            "filterByCategory": [Function],
+                            "filterByCompleted": [Function],
+                            "filterByQuery": [Function],
+                            "filters": Object {
+                              "category": "all",
+                              "completed": null,
+                              "query": "",
+                            },
+                            "findById": [Function],
+                            "loadChunkSize": 10,
+                            "loadTodos": [Function],
+                            "meta": Object {
+                              "all": 0,
+                              "completed": 0,
+                              "pending": 0,
+                            },
+                            "requestStatus": "error",
+                            "shownTodo": null,
+                            "todos": Array [],
+                          },
+                        }
+                      }
+                      todo={
+                        Object {
+                          "completed": true,
+                          "date": "Jan 01, 2020",
+                          "description": "Todo description.",
+                          "id": "1",
+                          "title": "Todo Title",
+                        }
+                      }
+                    >
+                      <li
+                        className="peer mL-10 todo-controls__item"
+                      >
+                        <a
+                          className="fa fa-pencil todo-controls__icon"
+                          data-for="controls__control-tip-edit-1"
+                          data-tip={true}
+                          href="#"
+                          onClick={[Function]}
+                        >
+                           
+                        </a>
+                        <ReactTooltip
+                          effect="solid"
+                          id="controls__control-tip-edit-1"
+                          insecure={true}
+                          resizeHide={true}
+                          wrapper="div"
+                        >
+                          <div
+                            className="__react_component_tooltip place-top type-dark "
+                            data-id="tooltip"
+                            id="controls__control-tip-edit-1"
+                          >
+                            <span>
+                              Edit Todo
+                            </span>
+                          </div>
+                        </ReactTooltip>
+                      </li>
+                    </Edit>
+                  </inject-Edit-with-store>
+                </ul>
+              </Controls>
+            </div>
+          </div>
+          <div
+            className="w-100p"
+          >
+            <div
+              className="mT-40"
+            >
+              <ViewBody
+                todo={
+                  Object {
+                    "completed": true,
+                    "date": "Jan 01, 2020",
+                    "description": "Todo description.",
+                    "id": "1",
+                    "title": "Todo Title",
+                  }
+                }
+              >
+                <i
+                  className="op-50p"
+                >
+                  Jan 01, 2020
+                </i>
+                <h2
+                  className="mB-20 mT-10 tt-c"
+                >
+                  Todo Title
+                </h2>
+                <p>
+                  Todo description.
+                </p>
+              </ViewBody>
+            </div>
+          </div>
+        </div>
+      </Todo>
+    </inject-Todo-with-store>
+  </Provider>
+</TodoComponent>
+`;

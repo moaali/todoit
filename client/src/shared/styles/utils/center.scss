@@ -1,0 +1,41 @@
+// ---------------------------------------------------------
+// @Centering
+// ---------------------------------------------------------
+
+%centerY {
+  @extend %t-50p;
+
+  transform: translateY(-50%);
+}
+
+%centerX {
+  @extend %l-50p;
+
+  transform: translateX(-50%);
+}
+
+%centerXY {
+  @extend %tl-50p;
+
+  transform: translate(-50%, -50%);
+}
+
+@include generate-responsive() {
+  %centerY\@#{$breakpoint-alias} {
+    @extend %t-50p\@#{$breakpoint-alias};
+
+    transform: translateY(-50%);
+  }
+
+  %centerX\@#{$breakpoint-alias} {
+    @extend %l-50p\@#{$breakpoint-alias};
+
+    transform: translateX(-50%);
+  }
+
+  %centerXY\@#{$breakpoint-alias} {
+    @extend %tl-50p\@#{$breakpoint-alias};
+
+    transform: translate(-50%, -50%);
+  }
+}

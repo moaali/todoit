@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content should match snapshot 1`] = `
+<section
+  className="peers fxw-nw content "
+>
+  <div
+    className="peer"
+  >
+    <Sidebar />
+  </div>
+  <div
+    className="peer peer-greed"
+  >
+    <Main />
+  </div>
+  <div
+    className="peer"
+  >
+    <inject-Offcanvas-with-store />
+  </div>
+  <inject-AddButton-with-store />
+</section>
+`;

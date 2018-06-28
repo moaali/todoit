@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Offcanvas should match snapshot 1`] = `
+<OffcanvasComponent>
+  <Provider
+    store={
+      Object {
+        "offcanvasStore": OffcanvasStore {
+          "isOffcanvasNewMode": false,
+          "isOffcanvasShown": false,
+        },
+        "searchStore": SearchStore {},
+        "sidebarStore": SidebarStore {},
+        "todosStore": TodosStore {
+          "activeCategory": "all",
+          "applyFilters": [Function],
+          "currentOffset": 0,
+          "displayedTodos": Array [],
+          "filterByCategory": [Function],
+          "filterByCompleted": [Function],
+          "filterByQuery": [Function],
+          "filters": Object {
+            "category": "all",
+            "completed": null,
+            "query": "",
+          },
+          "findById": [Function],
+          "loadChunkSize": 10,
+          "loadTodos": [Function],
+          "meta": Object {
+            "all": 0,
+            "completed": 0,
+            "pending": 0,
+          },
+          "requestStatus": "error",
+          "shownTodo": null,
+          "todos": Array [],
+        },
+      }
+    }
+  >
+    <inject-Offcanvas-with-store>
+      <Offcanvas
+        store={
+          Object {
+            "offcanvasStore": OffcanvasStore {
+              "isOffcanvasNewMode": false,
+              "isOffcanvasShown": false,
+            },
+            "searchStore": SearchStore {},
+            "sidebarStore": SidebarStore {},
+            "todosStore": TodosStore {
+              "activeCategory": "all",
+              "applyFilters": [Function],
+              "currentOffset": 0,
+              "displayedTodos": Array [],
+              "filterByCategory": [Function],
+              "filterByCompleted": [Function],
+              "filterByQuery": [Function],
+              "filters": Object {
+                "category": "all",
+                "completed": null,
+                "query": "",
+              },
+              "findById": [Function],
+              "loadChunkSize": 10,
+              "loadTodos": [Function],
+              "meta": Object {
+                "all": 0,
+                "completed": 0,
+                "pending": 0,
+              },
+              "requestStatus": "error",
+              "shownTodo": null,
+              "todos": Array [],
+            },
+          }
+        }
+      >
+        <div
+          className="offcanvas "
+        >
+          <div
+            className="offcanvas__overlay"
+          />
+          <div
+            className="offcanvas__body"
+          >
+            <div
+              className="p-60 ov-a h-100p"
+            />
+            <Close
+              handleClose={[Function]}
+            >
+              <button
+                className="offcanvas__dismiss"
+                onClick={[Function]}
+              >
+                <i
+                  className="fa fa-close"
+                />
+              </button>
+            </Close>
+          </div>
+        </div>
+      </Offcanvas>
+    </inject-Offcanvas-with-store>
+  </Provider>
+</OffcanvasComponent>
+`;

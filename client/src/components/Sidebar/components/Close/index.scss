@@ -1,0 +1,30 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.sidebar__dismiss {
+  // Box Model
+  position: fixed;
+  top: 60px;
+  left: 280px;
+  width: 40px;
+  margin-right: -40px;
+  padding: 15px 0;
+
+  // Cosmetics
+  background-color: white;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 0;
+  box-shadow: 4px 0 3px 2px rgba($color-primary, 0.02);
+
+  .fa {
+    // Cosmetics
+    color: $color-danger;
+  }
+
+  @media (min-width: 992px) {
+    // Box Model
+    display: none;
+  }
+}

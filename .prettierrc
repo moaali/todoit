@@ -1,0 +1,34 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": false,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "overrides": [
+    {
+      "files": [
+        ".stylelintrc",
+        ".babelrc",
+        ".browserslistrc",
+        ".editorconfig",
+        ".eslintignore",
+        ".eslintrc",
+        ".gitattributes",
+        ".gitignore",
+        ".lintstagedrc",
+        ".postcssrc",
+        ".prettierrc",
+      ],
+      "options": { "parser": "json", "trailingComma": "none" }
+    },
+    {
+      "files": "*.json",
+      "options": { "trailingComma": "none" }
+    }
+  ]
+}
+
+

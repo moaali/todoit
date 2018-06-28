@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    ["@babel/preset-stage-0", { "decoratorsLegacy": true }]
+  ],
+
+  "plugins": [
+    "react-hot-loader/babel", [
+      "@babel/plugin-proposal-decorators", {
+        "legacy": true
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-pipeline-operator",
+    "@babel/plugin-syntax-dynamic-import",
+    "syntax-trailing-function-commas"
+  ],
+
+  "env": {
+    "production": {
+      "plugins": ["transform-react-remove-prop-types"]
+    }
+  }
+}

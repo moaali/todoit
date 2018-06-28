@@ -1,0 +1,11 @@
+// ---------------------------------------------------------
+// @Vertical Layers
+// ---------------------------------------------------------
+
+// Stack sections in column style using flexbox.
+
+%layers {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

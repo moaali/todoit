@@ -1,0 +1,78 @@
+// ---------------------------------------------------------
+// @TOC
+// ---------------------------------------------------------
+
+// + @Greyscale COlors
+// + @Variant Colors
+// + @Alerts Colors
+
+// ---------------------------------------------------------
+// @Greyscale COlors
+// ---------------------------------------------------------
+
+// [1] : Big Headlines - Inverted Backgrounds.
+// [2] : Main Titles.
+// [3] : Icons - Links.
+// [4] : Main Text.
+// [5] : Disabled Stats - Placeholders.
+// [6] : Strips Background.
+// [7] : Borders - Light Backgrounds.
+
+$color-blocker  : hsla(210, 40%, 15%, 1) !default;    // [1]
+$color-critical : hsla(210, 40%, 15%, 0.85) !default; // [2]
+$color-pivotal  : hsla(210, 40%, 15%, 0.7) !default;  // [3]
+$color-major    : hsla(210, 40%, 15%, 0.55) !default; // [4]
+$color-minor    : hsla(210, 40%, 15%, 0.4) !default;  // [5]
+$color-omitted  : hsla(210, 40%, 15%, 0.25) !default; // [6]
+$color-vague    : hsla(210, 40%, 15%, 0.1) !default;  // [7]
+
+$color-greys-set: (
+  'blocker'  : $color-blocker,
+  'critical' : $color-critical,
+  'pivotal'  : $color-pivotal,
+  'major'    : $color-major,
+  'minor'    : $color-minor,
+  'omitted'  : $color-omitted,
+  'vague'    : $color-vague,
+  'white'    : hsla(0, 0%, 100%, 1),
+  'transparent' : hsla(0, 0%, 100%, 0),
+) !default;
+
+// ---------------------------------------------------------
+// @Variant Colors
+// ---------------------------------------------------------
+
+$color-primary   : hsla(255, 91%, 64%, 1) !default;
+$color-secondary : hsla(260, 75%, 55%, 1) !default;
+$color-accent    : hsla(135, 80%, 50%, 1) !default;
+$color-extra     : hsla(35, 100%, 55%, 1) !default;
+
+$color-variants-set: (
+  'primary'   : $color-primary,
+  'secondary' : $color-secondary,
+  'accent'    : $color-accent,
+  'extra'     : $color-extra
+) !default;
+
+// ---------------------------------------------------------
+// @Alerts Colors
+// ---------------------------------------------------------
+
+$color-danger  : hsla(360, 95%, 55%, 1) !default;
+$color-warning : hsla(35, 100%, 55%, 1) !default;
+$color-info    : hsla(260, 75%, 55%, 1) !default;
+$color-success : hsla(89, 72%, 49%, 1) !default;
+
+$color-alerts-set: (
+  'danger'  : $color-danger,
+  'warning' : $color-warning,
+  'info'    : $color-info,
+  'success' : $color-success
+) !default;
+
+// ---------------------------------------------------------
+// @Alerts Colors
+// ---------------------------------------------------------
+
+// Used in generating color classes.
+$color-sets: $color-greys-set $color-variants-set $color-alerts-set !default;

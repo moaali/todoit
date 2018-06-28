@@ -1,0 +1,134 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.sidebar {
+  // Box Model
+  width: 280px;
+  height: 100vh;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transform: translate3d(0, 0, 0);
+
+  // Cosmetics
+  background: white;
+  box-shadow: 3px 3px 2px 2px rgba($color-primary, 0.03);
+
+  // Ease
+  transition: all 180ms ease-in-out;
+
+  @media (min-width: 992px) {
+    // Box Model
+    height: calc(100vh - 80px);
+    top: 80px;
+    z-index: auto;
+  }
+}
+
+.collapsed .sidebar {
+  // Box Model
+  transform: translate3d(-120%, 0, 0);
+}
+
+.sidebar__wrapper {
+  // Box Model
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar__content {
+  // Box Model
+  padding: 60px 0;
+}
+
+.sidebar__links-menu {
+  // Box Model
+  padding: 0;
+  margin: 0;
+
+  // Cosmetics
+  list-style: none;
+}
+
+.sidebar__menu-item {
+  // Box Model
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  // Ease
+  transition: all 180ms ease-in-out;
+
+  &:hover {
+    // Cosmetics
+    background: rgba($color-primary, 0.04);
+  }
+}
+
+.sidebar__link {
+  // Box Model
+  display: flex;
+  width: 100%;
+  flex-direction: column nowrap;
+  align-items: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 12px 0;
+
+  // Cosmetics
+  color: $color-critical;
+
+  .sidebar__menu-item--primary & { color: $color-primary; }
+  .sidebar__menu-item--warning & { color: $color-warning; }
+  .sidebar__menu-item--success & { color: $color-success; }
+
+  &::before {
+    content: '';
+
+    // Box Model
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 3px;
+    height: 100%;
+    display: block;
+
+    // Ease
+    transition: all 180ms ease-in-out;
+
+    .sidebar__menu-item--is-active & {
+      // Box Model
+      left: 0;
+    }
+
+    .sidebar__menu-item--primary &,
+    .sidebar__labels-menu & { background: $color-primary; }
+    .sidebar__menu-item--warning & { background: $color-warning; }
+    .sidebar__menu-item--success & { background: $color-success; }
+  }
+
+  .sidebar__labels-menu .sidebar__menu-item--is-active & {
+    // Cosmetics
+    color: $color-primary;
+  }
+}
+
+.sidebar__link-icon {
+  // Box Model
+  margin-right: 20px;
+
+  .sidebar__menu-item--warning & { color: $color-warning !important; }
+  .sidebar__menu-item--success & { color: $color-success !important; }
+
+  .sidebar__menu-item--primary &,
+  .sidebar__labels-menu .sidebar__menu-item--is-active & {
+    // Cosmetics
+    color: $color-primary !important;
+  }
+}

@@ -1,0 +1,101 @@
+// ---------------------------------------------------------
+// @TOC
+// ---------------------------------------------------------
+
+// + @Position (0 > 4 Step 1)
+// + @Position (5 > 35 Step 5)
+// + @Position (40 > 160 Step 10)
+
+// ---------------------------------------------------------
+// @Position (0 > 4 Step 1)
+// ---------------------------------------------------------
+
+@for $i from 0 through 4 {
+  %t-#{$i} { top: #{$i}px; }
+  %r-#{$i} { right: #{$i}px; }
+  %b-#{$i} { bottom: #{$i}px; }
+  %l-#{$i} { left: #{$i}px; }
+
+  @include generate-responsive() {
+    %t-#{$i}\@#{$breakpoint-alias} { top: #{$i}px; }
+    %r-#{$i}\@#{$breakpoint-alias} { right: #{$i}px; }
+    %b-#{$i}\@#{$breakpoint-alias} { bottom: #{$i}px; }
+    %l-#{$i}\@#{$breakpoint-alias} { left: #{$i}px; }
+  }
+}
+
+// ---------------------------------------------------------
+// @Position (5 > 35 Step 5)
+// ---------------------------------------------------------
+
+@for $i from 5 through 35 {
+  @if $i % 5 == 0 {
+    %t-#{$i} { top: #{$i}px; }
+    %r-#{$i} { right: #{$i}px; }
+    %b-#{$i} { bottom: #{$i}px; }
+    %l-#{$i} { left: #{$i}px; }
+
+    @include generate-responsive() {
+      %t-#{$i}\@#{$breakpoint-alias} { top: #{$i}px; }
+      %r-#{$i}\@#{$breakpoint-alias} { right: #{$i}px; }
+      %b-#{$i}\@#{$breakpoint-alias} { bottom: #{$i}px; }
+      %l-#{$i}\@#{$breakpoint-alias} { left: #{$i}px; }
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// @Position (40 > 160 Step 10)
+// ---------------------------------------------------------
+
+@for $i from 40 through 160 {
+  @if $i % 10 == 0 {
+    %t-#{$i} { top: #{$i}px; }
+    %r-#{$i} { right: #{$i}px; }
+    %b-#{$i} { bottom: #{$i}px; }
+    %l-#{$i} { left: #{$i}px; }
+
+    @include generate-responsive() {
+      %t-#{$i}\@#{$breakpoint-alias} { top: #{$i}px; }
+      %r-#{$i}\@#{$breakpoint-alias} { right: #{$i}px; }
+      %b-#{$i}\@#{$breakpoint-alias} { bottom: #{$i}px; }
+      %l-#{$i}\@#{$breakpoint-alias} { left: #{$i}px; }
+    }
+  }
+}
+
+// ---------------------------------------------------------
+// @Position (50%)
+// ---------------------------------------------------------
+
+%tl-50p {
+  top: 50%;
+  left: 50%;
+}
+
+%tr-50p {
+  top: 50%;
+  right: 50%;
+}
+
+%t-50p { top: 50%; }
+%r-50p { right: 50%; }
+%b-50p { bottom: 50%; }
+%l-50p { left: 50%; }
+
+@include generate-responsive() {
+  %tl-50p\@#{$breakpoint-alias} {
+    top: 50%;
+    left: 50%;
+  }
+
+  %tr-50p\@#{$breakpoint-alias} {
+    top: 50%;
+    right: 50%;
+  }
+
+  %t-50p\@#{$breakpoint-alias} { top: 50%; }
+  %r-50p\@#{$breakpoint-alias} { right: 50%; }
+  %b-50p\@#{$breakpoint-alias} { bottom: 50%; }
+  %l-50p\@#{$breakpoint-alias} { left: 50%; }
+}

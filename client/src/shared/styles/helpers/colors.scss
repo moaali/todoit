@@ -1,0 +1,38 @@
+// ---------------------------------------------------------
+// @Colors
+// ---------------------------------------------------------
+
+@each $color-set in $color-sets {
+  @each $name, $color in $color-set {
+    @for $i from 0 through 100 {
+      @if $i % 5 == 0 {
+        $amount: $i / 100;
+
+        %c-#{$name}-#{$i},
+        %cH-#{$name}-#{$i}:hover {
+          color: rgba($color, $amount) !important;
+        }
+
+        %bgc-#{$name}-#{$i},
+        %bgcH-#{$name}-#{$i}:hover {
+          background-color: rgba($color, $amount) !important;
+        }
+
+        %bdc-#{$name}-#{$i},
+        %bdcH-#{$name}-#{$i}:hover {
+          border-color: rgba($color, $amount) !important;
+        }
+
+        %fill-#{$name}-#{$i},
+        %fillH-#{$name}-#{$i}:hover {
+          fill: rgba($color, $amount) !important;
+        }
+
+        %str-#{$name}-#{$i},
+        %strH-#{$name}-#{$i}:hover {
+          stroke: rgba($color, $amount) !important;
+        }
+      }
+    }
+  }
+}

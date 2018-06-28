@@ -1,0 +1,71 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.button {
+  // Typography
+  text-transform: capitalize;
+  text-align: center;
+  justify-content: center;
+  line-height: 0;
+
+  // Box Model
+  display: inline-flex;
+  padding: 20px;
+  min-width: 120px;
+
+  // Cosmetics
+  border-radius: 10em;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.button--primary {
+  // Cosmetics
+  background: $color-primary;
+  color: white;
+  border-color: rgba($color-pivotal, 0.1);
+
+  &:hover {
+    // Cosmetics
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(white, 0.9);
+    border-color: transparent;
+  }
+
+  &.button--hollow {
+    // Cosmetics
+    background: transparent;
+    color: $color-critical;
+    border-color: rgba($color-pivotal, 0.1);
+
+    &:hover {
+      // Cosmetics
+      background: $color-primary;
+      color: white;
+      border-color: transparent;
+    }
+  }
+}
+
+.button--hollow {
+  // Cosmetics
+  border-width: 2px;
+  border-style: solid;
+  background: transparent;
+}
+
+.button--rounded {
+  // Box Model
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+  min-width: auto;
+  width: 60px;
+  align-items: center;
+
+  .fa {
+    // Cosmetics
+    color: white;
+  }
+}

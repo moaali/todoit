@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddButton should match snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "offcanvasStore": OffcanvasStore {},
+      "searchStore": SearchStore {},
+      "sidebarStore": SidebarStore {},
+      "todosStore": TodosStore {
+        "activeCategory": "all",
+        "applyFilters": [Function],
+        "currentOffset": 0,
+        "displayedTodos": Array [],
+        "filterByCategory": [Function],
+        "filterByCompleted": [Function],
+        "filterByQuery": [Function],
+        "filters": Object {
+          "category": "all",
+          "completed": null,
+          "query": "",
+        },
+        "findById": [Function],
+        "loadChunkSize": 10,
+        "loadTodos": [Function],
+        "meta": Object {
+          "all": 0,
+          "completed": 0,
+          "pending": 0,
+        },
+        "requestStatus": "error",
+        "shownTodo": null,
+        "todos": Array [],
+      },
+    }
+  }
+>
+  <inject-AddButton-with-store />
+</Provider>
+`;

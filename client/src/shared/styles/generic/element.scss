@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  @extend %fw-400;
+  @extend %c-pivotal-70;
+  @extend %bgc-primary-5;
+
+  font-family: $font-sans-serif;
+  font-size: $font-size;
+}
+
+a, button, input {
+  transition: all 180ms ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+button, input {
+  border-style: solid;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}

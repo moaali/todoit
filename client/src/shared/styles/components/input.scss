@@ -1,0 +1,29 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.control {
+  // Box Model
+  display: block;
+  padding: 0 20px;
+  height: 40px;
+
+  // Cosmetics
+  border: 2px solid rgba($color-pivotal, 0.1);
+  border-radius: 10em;
+  background: transparent;
+
+  &::placeholder {
+    // Typography
+    font-style: italic;
+
+    // Cosmetics
+    color: rgba($color-pivotal, 0.3);
+  }
+
+  &:focus {
+    // Cosmetics
+    outline: 0;
+    border-color: $color-primary;
+  }
+}

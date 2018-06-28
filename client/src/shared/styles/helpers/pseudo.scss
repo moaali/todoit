@@ -1,0 +1,6 @@
+// ---------------------------------------------------------
+// @Pseudo Elements
+// ---------------------------------------------------------
+
+%no-after::after, %no-pseudo::after    { display: none !important; }
+%no-before::before, %no-pseudo::before { display: none !important; }

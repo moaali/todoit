@@ -1,0 +1,16 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.fa {
+  // Typography
+  font-size: 24px;
+
+  // Cosmetics
+  color: rgba($color-pivotal, 0.85);
+}
+
+a:hover .fa {
+  // Cosmetics
+  color: inherit !important;
+}

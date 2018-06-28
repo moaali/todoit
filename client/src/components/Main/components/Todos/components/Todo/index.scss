@@ -1,0 +1,34 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+
+.todo {
+  // Box Model
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 30px;
+  min-height: 360px;
+  max-height: 360px;
+  height: 50vmax;
+
+  // Cosmetics
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 0 3px 3px rgba($color-primary, 0.04);
+
+  .offcanvas & {
+    // Box Model
+    padding: 0;
+    height: auto;
+
+    // Cosmetics
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.todo--is-completed {
+  // Cosmetics
+  border: 2px solid $color-success;
+}

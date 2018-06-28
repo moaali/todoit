@@ -1,0 +1,381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should match snapshot 1`] = `
+<SidebarComponent>
+  <Provider
+    store={
+      Object {
+        "offcanvasStore": OffcanvasStore {},
+        "searchStore": SearchStore {},
+        "sidebarStore": SidebarStore {},
+        "todosStore": TodosStore {
+          "activeCategory": "all",
+          "applyFilters": [Function],
+          "currentOffset": 0,
+          "displayedTodos": Array [],
+          "filterByCategory": [Function],
+          "filterByCompleted": [Function],
+          "filterByQuery": [Function],
+          "filters": Object {
+            "category": "all",
+            "completed": null,
+            "query": "",
+          },
+          "findById": [Function],
+          "loadChunkSize": 10,
+          "loadTodos": [Function],
+          "meta": Object {
+            "all": 0,
+            "completed": 0,
+            "pending": 0,
+          },
+          "requestStatus": "error",
+          "shownTodo": null,
+          "todos": Array [],
+        },
+      }
+    }
+  >
+    <Sidebar>
+      <aside
+        className="sidebar"
+      >
+        <inject-Close-with-store>
+          <Close
+            store={
+              Object {
+                "offcanvasStore": OffcanvasStore {},
+                "searchStore": SearchStore {},
+                "sidebarStore": SidebarStore {},
+                "todosStore": TodosStore {
+                  "activeCategory": "all",
+                  "applyFilters": [Function],
+                  "currentOffset": 0,
+                  "displayedTodos": Array [],
+                  "filterByCategory": [Function],
+                  "filterByCompleted": [Function],
+                  "filterByQuery": [Function],
+                  "filters": Object {
+                    "category": "all",
+                    "completed": null,
+                    "query": "",
+                  },
+                  "findById": [Function],
+                  "loadChunkSize": 10,
+                  "loadTodos": [Function],
+                  "meta": Object {
+                    "all": 0,
+                    "completed": 0,
+                    "pending": 0,
+                  },
+                  "requestStatus": "error",
+                  "shownTodo": null,
+                  "todos": Array [],
+                },
+              }
+            }
+          >
+            <button
+              className="sidebar__dismiss"
+              onClick={[Function]}
+            >
+              <i
+                className="fa fa-close fsz-lg"
+              />
+            </button>
+          </Close>
+        </inject-Close-with-store>
+        <div
+          className="sidebar__wrapper"
+        >
+          <div
+            className="sidebar__content"
+          >
+            <inject-Categories-with-store>
+              <Categories
+                store={
+                  Object {
+                    "offcanvasStore": OffcanvasStore {},
+                    "searchStore": SearchStore {},
+                    "sidebarStore": SidebarStore {},
+                    "todosStore": TodosStore {
+                      "activeCategory": "all",
+                      "applyFilters": [Function],
+                      "currentOffset": 0,
+                      "displayedTodos": Array [],
+                      "filterByCategory": [Function],
+                      "filterByCompleted": [Function],
+                      "filterByQuery": [Function],
+                      "filters": Object {
+                        "category": "all",
+                        "completed": null,
+                        "query": "",
+                      },
+                      "findById": [Function],
+                      "loadChunkSize": 10,
+                      "loadTodos": [Function],
+                      "meta": Object {
+                        "all": 0,
+                        "completed": 0,
+                        "pending": 0,
+                      },
+                      "requestStatus": "error",
+                      "shownTodo": null,
+                      "todos": Array [],
+                    },
+                  }
+                }
+              >
+                <ul
+                  className="sidebar__links-menu"
+                >
+                  <inject-Link-with-store
+                    category="all"
+                    className="sidebar__menu-item--is-active"
+                    count={0}
+                    icon="database"
+                    theme="primary"
+                  >
+                    <Link
+                      category="all"
+                      className="sidebar__menu-item--is-active"
+                      count={0}
+                      icon="database"
+                      store={
+                        Object {
+                          "offcanvasStore": OffcanvasStore {},
+                          "searchStore": SearchStore {},
+                          "sidebarStore": SidebarStore {},
+                          "todosStore": TodosStore {
+                            "activeCategory": "all",
+                            "applyFilters": [Function],
+                            "currentOffset": 0,
+                            "displayedTodos": Array [],
+                            "filterByCategory": [Function],
+                            "filterByCompleted": [Function],
+                            "filterByQuery": [Function],
+                            "filters": Object {
+                              "category": "all",
+                              "completed": null,
+                              "query": "",
+                            },
+                            "findById": [Function],
+                            "loadChunkSize": 10,
+                            "loadTodos": [Function],
+                            "meta": Object {
+                              "all": 0,
+                              "completed": 0,
+                              "pending": 0,
+                            },
+                            "requestStatus": "error",
+                            "shownTodo": null,
+                            "todos": Array [],
+                          },
+                        }
+                      }
+                      theme="primary"
+                    >
+                      <li
+                        className="sidebar__menu-item sidebar__menu-item--primary sidebar__menu-item--is-active"
+                      >
+                        <a
+                          className="sidebar__link"
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-database sidebar__link-icon"
+                          />
+                          <span
+                            className="sidebar__link-text"
+                          >
+                            all
+                          </span>
+                        </a>
+                        <span
+                          className="sidebar__link-addon"
+                        >
+                          <Badge
+                            className="badge--primary"
+                            content={0}
+                          >
+                            <span
+                              className="badge badge--primary"
+                            >
+                              0
+                            </span>
+                          </Badge>
+                        </span>
+                      </li>
+                    </Link>
+                  </inject-Link-with-store>
+                  <inject-Link-with-store
+                    category="pending"
+                    className=""
+                    count={0}
+                    icon="repeat"
+                    theme="warning"
+                  >
+                    <Link
+                      category="pending"
+                      className=""
+                      count={0}
+                      icon="repeat"
+                      store={
+                        Object {
+                          "offcanvasStore": OffcanvasStore {},
+                          "searchStore": SearchStore {},
+                          "sidebarStore": SidebarStore {},
+                          "todosStore": TodosStore {
+                            "activeCategory": "all",
+                            "applyFilters": [Function],
+                            "currentOffset": 0,
+                            "displayedTodos": Array [],
+                            "filterByCategory": [Function],
+                            "filterByCompleted": [Function],
+                            "filterByQuery": [Function],
+                            "filters": Object {
+                              "category": "all",
+                              "completed": null,
+                              "query": "",
+                            },
+                            "findById": [Function],
+                            "loadChunkSize": 10,
+                            "loadTodos": [Function],
+                            "meta": Object {
+                              "all": 0,
+                              "completed": 0,
+                              "pending": 0,
+                            },
+                            "requestStatus": "error",
+                            "shownTodo": null,
+                            "todos": Array [],
+                          },
+                        }
+                      }
+                      theme="warning"
+                    >
+                      <li
+                        className="sidebar__menu-item sidebar__menu-item--warning "
+                      >
+                        <a
+                          className="sidebar__link"
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-repeat sidebar__link-icon"
+                          />
+                          <span
+                            className="sidebar__link-text"
+                          >
+                            pending
+                          </span>
+                        </a>
+                        <span
+                          className="sidebar__link-addon"
+                        >
+                          <Badge
+                            className="badge--warning"
+                            content={0}
+                          >
+                            <span
+                              className="badge badge--warning"
+                            >
+                              0
+                            </span>
+                          </Badge>
+                        </span>
+                      </li>
+                    </Link>
+                  </inject-Link-with-store>
+                  <inject-Link-with-store
+                    category="completed"
+                    className=""
+                    count={0}
+                    icon="check"
+                    theme="success"
+                  >
+                    <Link
+                      category="completed"
+                      className=""
+                      count={0}
+                      icon="check"
+                      store={
+                        Object {
+                          "offcanvasStore": OffcanvasStore {},
+                          "searchStore": SearchStore {},
+                          "sidebarStore": SidebarStore {},
+                          "todosStore": TodosStore {
+                            "activeCategory": "all",
+                            "applyFilters": [Function],
+                            "currentOffset": 0,
+                            "displayedTodos": Array [],
+                            "filterByCategory": [Function],
+                            "filterByCompleted": [Function],
+                            "filterByQuery": [Function],
+                            "filters": Object {
+                              "category": "all",
+                              "completed": null,
+                              "query": "",
+                            },
+                            "findById": [Function],
+                            "loadChunkSize": 10,
+                            "loadTodos": [Function],
+                            "meta": Object {
+                              "all": 0,
+                              "completed": 0,
+                              "pending": 0,
+                            },
+                            "requestStatus": "error",
+                            "shownTodo": null,
+                            "todos": Array [],
+                          },
+                        }
+                      }
+                      theme="success"
+                    >
+                      <li
+                        className="sidebar__menu-item sidebar__menu-item--success "
+                      >
+                        <a
+                          className="sidebar__link"
+                          href="#"
+                          onClick={[Function]}
+                        >
+                          <i
+                            className="fa fa-check sidebar__link-icon"
+                          />
+                          <span
+                            className="sidebar__link-text"
+                          >
+                            completed
+                          </span>
+                        </a>
+                        <span
+                          className="sidebar__link-addon"
+                        >
+                          <Badge
+                            className="badge--success"
+                            content={0}
+                          >
+                            <span
+                              className="badge badge--success"
+                            >
+                              0
+                            </span>
+                          </Badge>
+                        </span>
+                      </li>
+                    </Link>
+                  </inject-Link-with-store>
+                </ul>
+              </Categories>
+            </inject-Categories-with-store>
+          </div>
+        </div>
+      </aside>
+    </Sidebar>
+  </Provider>
+</SidebarComponent>
+`;

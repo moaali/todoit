@@ -1,0 +1,123 @@
+@import 'settings/index';
+@import 'tools/index';
+@import 'helpers/index';
+@import 'utils/index';
+
+.dropdown {
+  // Box Model
+  position: absolute;
+  display: block;
+  padding: 0;
+  right: 0;
+  margin: 0;
+  margin-right: -20px;
+  min-width: 250px;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+
+  // Cosmetics
+  border-radius: 4px;
+  list-style: none;
+  background: white;
+  box-shadow: 0 0 3px 3px rgba($color-primary, 0.04);
+  transform: translate3d(0, 1.5em, 0);
+  transition: all 180ms ease-in-out;
+}
+
+.dropdown-container:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
+.dropdown__item {
+  // Box Model
+  box-sizing: border-box;
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &:first-child {
+    // Cosmetics
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  &:last-child {
+    // Cosmetics
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+.dropdown__link {
+  // Typography
+  text-transform: capitalize;
+
+  // Box Model
+  box-sizing: border-box;
+  display: flex !important;
+  flex-flow: row wrap;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 10px 15px;
+  z-index: 1000;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  // Cosmetics
+  text-decoration: none;
+  color: rgba($color-pivotal, 0.7);
+
+  &:not(.dropdown__link--disabled):hover {
+    background: $color-primary;
+    color: white;
+  }
+
+  &.dropdown__link--disabled {
+    pointer-events: none;
+  }
+}
+
+.dropdown__group {
+  // Box Model
+  box-sizing: border-box;
+  display: flex !important;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.dropdown__text,
+.dropdown__icon {
+  // Box Model
+  display: block;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.dropdown__text {
+  // Box Model
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.dropdown__addon {
+  // Typography
+  font-size: 12px;
+}

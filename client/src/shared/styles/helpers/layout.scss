@@ -1,0 +1,116 @@
+// ---------------------------------------------------------
+// @TOC
+// ---------------------------------------------------------
+
+// + @Display
+// + @Overflow
+// + @Float
+// + @Vertical Align
+// + @Position
+// + @Z-Index
+
+// ---------------------------------------------------------
+// @Display
+// ---------------------------------------------------------
+
+%d-b          { display: block !important; }
+%d-ib         { display: inline-block !important; }
+%d-i          { display: inline !important; }
+%d-tb         { display: table !important; }
+%d-tbc        { display: table-cell !important; }
+%d-n          { display: none !important; }
+
+@include generate-responsive() {
+  %d-b\@#{$breakpoint-alias}      { display: block !important; }
+  %d-ib\@#{$breakpoint-alias}     { display: inline-block !important; }
+  %d-i\@#{$breakpoint-alias}      { display: inline !important; }
+  %d-tb\@#{$breakpoint-alias}     { display: table !important; }
+  %d-tbc\@#{$breakpoint-alias}    { display: table-cell !important; }
+  %d-n\@#{$breakpoint-alias}      { display: none !important; }
+}
+
+// ---------------------------------------------------------
+// @Overflow
+// ---------------------------------------------------------
+
+%ov-h         { overflow: hidden !important; }
+%ov-a         { overflow: auto !important; }
+%ov-s         { overflow: scroll !important; }
+
+%ovY-h        { overflow-y: hidden !important; }
+%ovX-h        { overflow-x: hidden !important; }
+%ovY-a        { overflow-y: auto !important; }
+%ovX-a        { overflow-x: auto !important; }
+%ovY-s        { overflow-y: scroll !important; }
+%ovX-s        { overflow-x: scroll !important; }
+
+@include generate-responsive() {
+  %ov-h\@#{$breakpoint-alias}     { overflow: hidden !important; }
+  %ov-a\@#{$breakpoint-alias}     { overflow: auto !important; }
+  %ov-s\@#{$breakpoint-alias}     { overflow: scroll !important; }
+
+  %ovY-h\@#{$breakpoint-alias}    { overflow-y: hidden !important; }
+  %ovX-h\@#{$breakpoint-alias}    { overflow-x: hidden !important; }
+  %ovY-a\@#{$breakpoint-alias}    { overflow-y: auto !important; }
+  %ovX-a\@#{$breakpoint-alias}    { overflow-x: auto !important; }
+  %ovY-s\@#{$breakpoint-alias}    { overflow-y: scroll !important; }
+  %ovX-s\@#{$breakpoint-alias}    { overflow-x: scroll !important; }
+}
+
+// ---------------------------------------------------------
+// @Float
+// ---------------------------------------------------------
+
+%fl-l         { float: left !important; }
+%fl-r         { float: right !important; }
+%fl-n         { float: none !important; }
+
+@include generate-responsive() {
+  %fl-l\@#{$breakpoint-alias}     { float: left !important; }
+  %fl-r\@#{$breakpoint-alias}     { float: right !important; }
+  %fl-n\@#{$breakpoint-alias}     { float: none !important; }
+}
+
+// ---------------------------------------------------------
+// @Vertical Align
+// ---------------------------------------------------------
+
+%va-t         { vertical-align: top !important; }
+%va-m         { vertical-align: middle !important; }
+%va-b         { vertical-align: bottom !important; }
+
+@include generate-responsive() {
+  %va-t\@#{$breakpoint-alias}     { vertical-align: top !important; }
+  %va-m\@#{$breakpoint-alias}     { vertical-align: middle !important; }
+  %va-b\@#{$breakpoint-alias}     { vertical-align: bottom !important; }
+}
+
+// ---------------------------------------------------------
+// @Position
+// ---------------------------------------------------------
+
+%pos-s        { position: static !important; }
+%pos-st       { position: sticky !important; }
+%pos-r        { position: relative !important; }
+%pos-a        { position: absolute !important; }
+%pos-f        { position: fixed !important; }
+
+@include generate-responsive() {
+  %pos-s\@#{$breakpoint-alias}    { position: static !important; }
+  %pos-st\@#{$breakpoint-alias}   { position: sticky !important; }
+  %pos-r\@#{$breakpoint-alias}    { position: relative !important; }
+  %pos-a\@#{$breakpoint-alias}    { position: absolute !important; }
+  %pos-f\@#{$breakpoint-alias}    { position: fixed !important; }
+}
+
+// ---------------------------------------------------------
+// @Z-Index
+// ---------------------------------------------------------
+
+@for $i from 0 through 9 {
+  %z-#{$i} { z-index: ($i * 1000) !important; }
+
+  @include generate-responsive() {
+    %z-#{$i}\@#{$breakpoint-alias} { z-index: ($i * 1000) !important; }
+  }
+}

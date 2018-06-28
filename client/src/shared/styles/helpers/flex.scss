@@ -1,0 +1,187 @@
+// ---------------------------------------------------------
+// @TOC
+// ---------------------------------------------------------
+
+// + @Flex Wrap
+// + @Flex Direction
+// + @Flex
+// + @Flex Basis
+// + @Flex Grow
+// + @Flex Shrink
+// + @Flex Order
+
+// ---------------------------------------------------------
+// @Display
+// ---------------------------------------------------------
+
+%d-f     { display: flex; }
+%d-if    { display: inline-flex; }
+
+@include generate-responsive() {
+  %d-f\@#{$breakpoint-alias}     { display: flex; }
+  %d-if\@#{$breakpoint-alias}    { display: inline-flex; }
+}
+
+// ---------------------------------------------------------
+// @Flex Wrap
+// ---------------------------------------------------------
+
+%fxw-w   { flex-wrap: wrap; }
+%fxw-wr  { flex-wrap: wrap-reverse; }
+%fxw-nw  { flex-wrap: nowrap; }
+
+@include generate-responsive() {
+  %fxw-w\@#{$breakpoint-alias}   { flex-wrap: wrap; }
+  %fxw-wr\@#{$breakpoint-alias}  { flex-wrap: wrap-reverse; }
+  %fxw-nw\@#{$breakpoint-alias}  { flex-wrap: nowrap; }
+}
+
+// ---------------------------------------------------------
+// @Flex Direction
+// ---------------------------------------------------------
+
+%fxd-c   { flex-direction: column; }
+%fxd-cr  { flex-direction: column-reverse; }
+%fxd-r   { flex-direction: row; }
+%fxd-rr  { flex-direction: row-reverse; }
+
+@include generate-responsive() {
+  %fxd-c\@#{$breakpoint-alias}   { flex-direction: column; }
+  %fxd-cr\@#{$breakpoint-alias}  { flex-direction: column-reverse; }
+  %fxd-r\@#{$breakpoint-alias}   { flex-direction: row; }
+  %fxd-rr\@#{$breakpoint-alias}  { flex-direction: row-reverse; }
+}
+
+// ---------------------------------------------------------
+// @Align Items
+// ---------------------------------------------------------
+
+%ai-fs   { align-items: flex-start; }
+%ai-fe   { align-items: flex-end; }
+%ai-c    { align-items: center; }
+%ai-b    { align-items: baseline; }
+%ai-s    { align-items: stretch; }
+
+@include generate-responsive() {
+  %ai-fs\@#{$breakpoint-alias}   { align-items: flex-start; }
+  %ai-fe\@#{$breakpoint-alias}   { align-items: flex-end; }
+  %ai-c\@#{$breakpoint-alias}    { align-items: center; }
+  %ai-b\@#{$breakpoint-alias}    { align-items: baseline; }
+  %ai-s\@#{$breakpoint-alias}    { align-items: stretch; }
+}
+
+// ---------------------------------------------------------
+// @Align Self
+// ---------------------------------------------------------
+
+%as-fs   { align-self: flex-start; }
+%as-fe   { align-self: flex-end; }
+%as-c    { align-self: center; }
+%as-b    { align-self: baseline; }
+%as-s    { align-self: stretch; }
+
+@include generate-responsive() {
+  %as-fs\@#{$breakpoint-alias}   { align-self: flex-start; }
+  %as-fe\@#{$breakpoint-alias}   { align-self: flex-end; }
+  %as-c\@#{$breakpoint-alias}    { align-self: center; }
+  %as-b\@#{$breakpoint-alias}    { align-self: baseline; }
+  %as-s\@#{$breakpoint-alias}    { align-self: stretch; }
+}
+
+// ---------------------------------------------------------
+// @Align Content
+// ---------------------------------------------------------
+
+%ac-fs   { align-content: flex-start; }
+%ac-fe   { align-content: flex-end; }
+%ac-c    { align-content: center; }
+%ac-s    { align-content: stretch; }
+%ac-sb   { align-content: space-between; }
+%ac-sa   { align-content: space-around; }
+
+@include generate-responsive() {
+  %ac-fs\@#{$breakpoint-alias}   { align-content: flex-start; }
+  %ac-fe\@#{$breakpoint-alias}   { align-content: flex-end; }
+  %ac-c\@#{$breakpoint-alias}    { align-content: center; }
+  %ac-s\@#{$breakpoint-alias}    { align-content: stretch; }
+  %ac-sb\@#{$breakpoint-alias}   { align-content: space-between; }
+  %ac-sa\@#{$breakpoint-alias}   { align-content: space-around; }
+}
+
+// ---------------------------------------------------------
+// @Justify Content
+// ---------------------------------------------------------
+
+%jc-fs   { justify-content: flex-start; }
+%jc-fe   { justify-content: flex-end; }
+%jc-c    { justify-content: center; }
+%jc-sb   { justify-content: space-between; }
+%jc-sa   { justify-content: space-around; }
+
+@include generate-responsive() {
+  %jc-fs\@#{$breakpoint-alias}   { justify-content: flex-start; }
+  %jc-fe\@#{$breakpoint-alias}   { justify-content: flex-end; }
+  %jc-c\@#{$breakpoint-alias}    { justify-content: center; }
+  %jc-sb\@#{$breakpoint-alias}   { justify-content: space-between; }
+  %jc-sa\@#{$breakpoint-alias}   { justify-content: space-around; }
+}
+
+// ---------------------------------------------------------
+// @Flex
+// ---------------------------------------------------------
+
+%fx-n    { flex: none; }
+%fx-1    { flex: 1; }
+
+@include generate-responsive() {
+  %fx-n\@#{$breakpoint-alias}    { flex: none; }
+  %fx-1\@#{$breakpoint-alias}    { flex: 1; }
+}
+
+// ---------------------------------------------------------
+// @Flex Basis
+// ---------------------------------------------------------
+
+%fxb-a   { flex-basis: auto; }
+%fxb-0   { flex-basis: 0; }
+
+@include generate-responsive() {
+  %fxb-a\@#{$breakpoint-alias}   { flex-basis: auto; }
+  %fxb-0\@#{$breakpoint-alias}   { flex-basis: 0; }
+}
+
+// ---------------------------------------------------------
+// @Flex Grow
+// ---------------------------------------------------------
+
+%fxg-1   { flex-grow: 1; }
+%fxg-0   { flex-grow: 0; }
+
+@include generate-responsive() {
+  %fxg-1\@#{$breakpoint-alias}   { flex-grow: 1; }
+  %fxg-0\@#{$breakpoint-alias}   { flex-grow: 0; }
+}
+
+// ---------------------------------------------------------
+// @Flex Shrink
+// ---------------------------------------------------------
+
+%fxs-1   { flex-shrink: 1; }
+%fxs-0   { flex-shrink: 0; }
+
+@include generate-responsive() {
+  %fxs-1\@#{$breakpoint-alias}   { flex-shrink: 1; }
+  %fxs-0\@#{$breakpoint-alias}   { flex-shrink: 0; }
+}
+
+// ---------------------------------------------------------
+// @Flex Order
+// ---------------------------------------------------------
+
+@for $i from 0 through 12 {
+  %ord-#{$i} { order: $i; }
+
+  @include generate-responsive() {
+    %ord-#{$i}\@#{$breakpoint-alias} { order: $i; }
+  }
+}

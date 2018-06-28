@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should match snapshot 1`] = `
+<div
+  className="peers header "
+>
+  <div
+    className="peer"
+  >
+    <inject-Logo-with-store />
+  </div>
+  <div
+    className="peers peer-greed jc-c"
+  >
+    <inject-HeaderSearch-with-store />
+  </div>
+  <div
+    className="peer"
+  >
+    <NavIcon />
+  </div>
+</div>
+`;
